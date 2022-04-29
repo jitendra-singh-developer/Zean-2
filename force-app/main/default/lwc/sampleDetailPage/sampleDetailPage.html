@@ -1,0 +1,100 @@
+<template>
+    <div>
+        <div style="font-size: 2rem;
+        font-weight: 900;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;" class="header">Submission Request</div>
+    </div>
+    <div style="    font-size: 1rem;
+    padding-left: 1rem;" class="slds-grid slds-wrap">
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Label Name 1:</span>
+        </div>
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Jasmin Supreme</span>
+        </div>
+    </div>
+    <div style="    font-size: 1rem;
+    padding-left: 1rem;" class="slds-grid slds-wrap">
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Material Number:</span>
+        </div>
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>3434343</span>
+        </div>
+    </div>
+    <div style="    font-size: 1rem;
+    padding-left: 1rem;" class="slds-grid slds-wrap">
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Customer Deadline:</span>
+        </div>
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>CN-1234</span>
+        </div>
+    </div>
+    <div style="    font-size: 1rem;
+    padding-left: 1rem;" class="slds-grid slds-wrap">
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Sales Number:</span>
+        </div>
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>12345678</span>
+        </div>
+    </div>
+    <div style="    font-size: 1rem;
+    padding-left: 1rem;" class="slds-grid slds-wrap">
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Material Description:</span>
+        </div>
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Leamon Flavour</span>
+        </div>
+    </div>
+    <div style="    font-size: 1rem;
+    padding-left: 1rem;" class="slds-grid slds-wrap">
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Dosage:</span>
+        </div>
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>12121</span>
+        </div>
+    </div>
+    <div style="    font-size: 1rem;
+    padding-left: 1rem;" class="slds-grid slds-wrap">
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Label Comment:</span>
+        </div>
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>Nice</span>
+        </div>
+    </div>
+    <div style="    font-size: 1rem;
+    padding-left: 1rem;" class="slds-grid slds-wrap">
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>SR Code:</span>
+        </div>
+        <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+            <span>34567</span>
+        </div>
+    </div>
+    <div>
+        <div style="font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;" class="header">Shipments</div>
+    </div>
+    <div if:true={shipmentList}>
+        <template for:each={shipmentList} for:item="shipment">
+            <div key={shipment.Id} class="slds-grid slds-wrap" style="    font-size: 1rem;
+            padding-left: 1rem;">
+                <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+                    <span style="color:brown" >Shipment Number</span>
+                </div>
+                <div class="slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12">
+                    <span style="color:brown" >{shipment.shipmentNumber}</span>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

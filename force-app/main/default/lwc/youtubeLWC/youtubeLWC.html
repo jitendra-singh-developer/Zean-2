@@ -1,0 +1,27 @@
+<template>
+    <div title="Make your own youtube with LWC">
+        LWC Youtube
+    </div>
+    
+    <div>
+        <lightning-input name="Query" type="Text" value={srcQuery} onchange={storeQuery} placeholder="IPL Match" label="Search here..." ></lightning-input>
+    </div>
+    <lightning-button onclick={getYoutubeVideos}  variant="brand" label="Search" >Search</lightning-button>
+    <template if:true={videosList}>
+        <div class="slds-grid slds-wrap">
+     
+
+                <template for:each={videosList} for:item="video" >
+                    <div key={video.videoURL} class="slds-col slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_12-of-12 slds-p-top_x-small"  >
+                       
+                           
+                                <iframe height="200" width="300" src={video.videoURL}></iframe>
+                         
+                    </div>
+                </template>
+         
+           
+          </div>
+   
+    </template>
+</template>

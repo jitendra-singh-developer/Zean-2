@@ -1,0 +1,93 @@
+<apex:page sidebar="false" applyBodyTag="false" lightningStylesheets="true" >
+    <apex:form >
+        <hr/>
+        <div style="background-color: #E22626; color: white; padding: 10px;">
+            <apex:outputLabel value="Filters: " style="font-weight:bold; font-size: 15px;" />
+            <apex:outputLabel value="Sales Unit: " style="font-weight:bold; font-size: 15px; margin-left:23rem;" />
+            <apex:selectList id="chooseColor"  size="1">
+                <apex:selectOption itemValue="Eldon Spain" itemLabel="Eldon Spain"/>
+                <apex:selectOption itemValue="White Spain" itemLabel="White Spain"/>
+                <apex:selectOption itemValue="Blue Tiger" itemLabel="Blue Tiger"/>
+            </apex:selectList>
+            <apex:outputLabel value="Country: " style="font-weight:bold; font-size: 15px;" />
+            <apex:selectList id="chooseColor1"  size="1">
+                <apex:selectOption itemValue="Eldon Spain" itemLabel="Eldon Spain"/>
+                <apex:selectOption itemValue="White Spain" itemLabel="White Spain"/>
+                <apex:selectOption itemValue="Blue Tiger" itemLabel="Blue Tiger"/>
+            </apex:selectList>
+           
+        </div>
+        <hr />
+        <table border="1px solid black" style="border-collapse: collapse;">
+            <tr style="border: 0px">
+            <th colspan="5" style="padding: 15px;">
+                    <apex:outputLabel value="Enclosure market size (LC)" style="font-weight:bold; font-size: 15px;" />&nbsp;&nbsp;
+            <apex:inputText id="input1" />
+                </th>
+                <th colspan="3" style="color: white; text-align: center; ">
+                <b class="labelStyle" >Digital</b>
+                </th>
+                <th colspan="4" style="color: white; text-align: center;">
+                <b class="labelStyle" >Sales</b>
+                </th>
+                <th colspan="1" style="color: white; text-align: center;">
+<b class="labelStyle" >Marketing</b>
+                </th>
+                <th colspan="2" style="color: white; text-align: center;" >
+<b class="labelStyle" >Legal</b>
+                </th>
+            </tr>
+            <tr>
+                <th>Channel</th>
+                <th>Customer</th>
+                <th>Total Enc</th>
+                <th>Supllementry</th>
+                <th>Acctual </th>
+                <th>Channel Group</th>
+                <th>Customer</th>
+                <th>Total Enc</th>
+                <th>Supllementry</th>
+                <th>Acctual Bussines</th>
+                <th>Group</th>
+                <th>Customer</th>
+                <th>Total Enc</th>
+                <th>Supllementry</th>
+                <th>Acctual</th>
+            </tr>                    
+
+                <tr>
+                    <td>
+                    <apex:outputText ></apex:outputText>
+                    </td>
+                    <td>Second Record</td>
+                    <td>Third Record</td>
+                    <td>Fourth Record</td>
+                    <td>Fifth Record</td>
+                    <td>Sixth Record</td>
+                    <td>Seventh Record</td>
+                    <td>Eighth Record</td>
+                    <td>Nineth Record</td>
+                    <td>Tenth Record</td>
+                    <td>Eleventh Record</td>
+                    <td>Tweleveth Record</td>
+                    <td>Thirteenth Record</td>
+                    <td>Fourtenn Record</td>
+                    <td>Fifteen Record</td>
+                   
+                </tr>
+          
+        </table>
+   
+        <style type="text/css" >
+            tr:nth-child(even) {
+            background-color: #D6EEEE;
+            }
+            .labelStyle{
+            background-color: #E22626;
+            display: block;
+            padding: 8px;
+            margin-top: 20px;
+            }
+        </style>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,23 @@
+<template>
+    <div if:true={mSpinner} >
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+    <div if:true={isPasswordModelOpen} >
+        <h1>Please Enter Your Password</h1>
+        <lightning-input name="Password" type="date" value={password} onchange={doPasswordFetch} placeholder="PIN" label="Enter your Password here ...." ></lightning-input>
+    </div>
+    <template if:true={showNextPage}>
+        <lightning-input name="Password" type="date" value={password} onchange={doPasswordFetch} placeholder="PIN" label="Enter your Password here ...." ></lightning-input>
+    </template>
+
+    <textarea label="Write something here..."  onchange={storeText} id="copyid1" value={testValue} name="Salesforce" ></textarea>
+
+    <button id="copyid" onclick={doCopy} name="Copy Text"  >Copy</button>
+
+ 
+    
+    <iframe width="10" height="10" src="https://www.youtube.com/embed/BC19kwABFwc" title="YouTube video player" frameborder="0" id="myid" ></iframe>
+   
+    <button   onclick={playVideo} name="Play Video"  >Play Video</button>
+    <iframe width="10" height="10" src="https://www.youtube.com/embed/Nj2U6rhnucI" title="YouTube video player" frameborder="0" id="myid2" ></iframe>
+</template>
